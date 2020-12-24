@@ -1,0 +1,58 @@
+import React,{ useEffect, useState } from 'react';
+import sanityClient from "../client.js";
+
+export default function Project() {
+    const [projectData, setProjectData] = useState(null);
+
+    useEffect(() => {
+        sanityClient.fetch(
+            `*[_type == "project"] {
+                title,
+                date,
+                place,
+                description,
+                projectType,
+                link,
+                tags
+            }`
+            )
+            .then((data) => setProjectData(data))
+                .catch(console.error);
+    }, []);
+    return (
+        <main className="bg-brown text-white min-h-screen p-12">
+            <section className="container mx-auto">
+                <h1 className="text-3xl flex justify-center mono">My Projects</h1>
+                <h2 className="text-lg text-white flex justify-center mb-12">Welcome to my projects page</h2>
+                <section className="grid md:grid-cols-2 gap-8">
+                    {projectData && projectData.map((project, index) => (
+                    <article className="relative bg-white text-brown rounded-lg shadow-xl p-16">
+                        <h3 className="text-3xl font-bold mb-2 hover:text-pink">
+                            <a href={project.link} alt={project.title} target="_blank" rel="noopener noreferrer">{project.title}</a>
+                        </h3>
+                        <div className="text-base text-brown space-x-4">
+                            <span>
+                                <strong className="font-bold">Finished on</strong>:{" "}
+                                {new Date(project.date).toLocaleDateString()}
+                            </span>
+                            <span>
+                                <strong className="font-bold">Company</strong>:{" "}
+                                {project.place}
+                            </span>
+                            <span>
+                                <strong className="font-bold">Type</strong>:{" "}
+                                {project.projectType}
+                            </span>
+                            <p className="my-6 text-lg leading-relaxed">{project.description}</p>
+                            <a href={project.link} alt="project link" rel="noopener noreferrer" target="_blank" className="text-pink font-bold hover:underline hover:text-pink-600">
+                                View Project {" "}
+                                <span role="img" aria-label="right pointer">👉</span>
+                            </a>
+                        </div>
+                    </article>
+                    ))}
+                </section>
+            </section>
+        </main>
+    )
+}
