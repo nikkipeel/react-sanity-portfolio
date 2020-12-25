@@ -20,9 +20,10 @@ body {
 }
 
 .prose img {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1rem auto;
   border-radius: 5px;
+  height: 400px;
+  width: auto;
 }
 
 .home-name {
