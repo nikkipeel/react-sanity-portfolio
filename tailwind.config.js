@@ -4,13 +4,20 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      brown: '#341611',
+      brown: {
+        DEFAULT: '#341611',
+        lighten: '#4f4543'
+      },
       white: {
         DEFAULT:'#f8f5f2',
         darken: '#eadfd7',
         active: '#fff'
       },
-      pink: '#EC4899'
+      pink: '#EC4899',
+      purple: '#AE1FF6',
+      yellow: '#FFB847',
+      green: '#3AF979',
+      blue: '#00E2FC'
     }
   },
   variants: {

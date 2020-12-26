@@ -47,6 +47,11 @@ export default {
       title: 'Body',
       type: 'blockContent',
     }, 
+    {
+      title: 'Description',
+      name: 'description',
+      type: 'text'
+    }
   ],
 
   preview: {
@@ -54,6 +59,7 @@ export default {
       title: 'title',
       author: 'author.name',
       media: 'mainImage',
+      description: 'description'
     },
     prepare(selection) {
       const {author} = selection

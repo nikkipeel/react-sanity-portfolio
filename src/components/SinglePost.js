@@ -3,6 +3,13 @@ import { useParams } from 'react-router-dom';
 import sanityClient from '../client.js';
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+
+
+{/*import ReactMarkdown from 'react-markdown';*/}
+
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -37,8 +44,9 @@ export default function SinglePost() {
     if(!singlePost) return <div>Loading...</div>
 
     return (
-        <main className="bg-brown min-h-screen p-12">
-            <article className="container  text-white shadow-lg mx-auto rounded-lg">
+        <main className="bg-brown min-h-screen p-4 md:p-12">
+            <Link to="/post" exact className="text-white text-base items-center"><FontAwesomeIcon icon={faChevronLeft} className="mr-4"></FontAwesomeIcon> Back to Blog</Link>
+            <article className="container text-white mx-auto rounded-lg mt-4">
                 <header className="relative">
                     <div className="absolute h-full w-full flex items-center justify-center p-8">
                         <div className="bg-white text-brown bg-opacity-75 rounded p-12">
@@ -53,10 +61,10 @@ export default function SinglePost() {
                     </div>
                     <img src={singlePost.mainImage.asset.url} alt={singlePost.title} className="w-full object-cover rounded-t" style={{ height: "400px"}}/>
                 </header>
-                <div className="bg-white text-brown px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
+                <div className="px-4 lg:px-16 py-12 lg:py-20 prose lg:prose-xl max-w-full leading-normal">
                     <BlockContent blocks={singlePost.body} projectId="0dzyqy4p" dataset="production"/> 
+                    {/*<ReactMarkdown markdown={singlePost.body} projectId="0dzyqy4p" dataset="production"/> */}
                 </div>
             </article>
         </main>
-    );
-}
+    )};

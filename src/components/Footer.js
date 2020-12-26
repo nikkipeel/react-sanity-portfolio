@@ -9,8 +9,7 @@ export default function Footer() {
                 <a href="#top" className="cursor-pointer hover:underline"><FontAwesomeIcon icon={ faChevronUp  }></FontAwesomeIcon><br/>Back To Top</a>
             </div>
             <div className="mt-16">
-                <p className="text-sm mt-8 mb-4 leading-loose">Lorem ipsum dolor sit amet consectetur <br/>adipisicing elit. Itaque recusandae aperiam et at veritatis delectus!</p>
-                <p>Last build: 19 Dec 2020</p>
+                <p className="text-sm mt-8 mb-4 leading-loose">Thank you for visiting my blog!</p>
                 <a href="mailto:nikkipeel.dev@gmail.com" className="cursor-pointer font-bold hover:underline hover:text-pink">Contact Me</a>
             </div>
         </footer>
