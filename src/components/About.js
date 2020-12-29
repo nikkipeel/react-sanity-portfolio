@@ -25,7 +25,7 @@ export default function About() {
         <main className="relative">   
             <div className="p-10 lg:pt-48 container mx-auto relative">
                 <section className="bg-brown text-white rounded-lg lg:flex p-12 md:p-20">
-                    <img src={urlFor(author.authorImage).url()} className="rounded-full h-60 w-48 lg:w-64 lg:h-80 md:mr-8" alt={author.name}/>
+                    <img src={urlFor(author.authorImage).url()} className="rounded-full h-60 w-48 lg:w-64 lg:h-80 mr-0 md:mr-8" alt={author.name}/>
                     <div className="text-lg flex flex-col justify-center">
                         <h1 className="mono text-2xl my-4">Hi there, I'm {" "}
                             <span>{author.name}</span>
