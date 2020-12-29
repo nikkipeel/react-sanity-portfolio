@@ -24,10 +24,10 @@ export default function About() {
     return (
         <main className="relative">   
             <div className="p-10 lg:pt-48 container mx-auto relative">
-                <section className="bg-brown text-white rounded-lg lg:flex p-20">
+                <section className="bg-brown text-white rounded-lg lg:flex p-12 md:p-20">
                     <img src={urlFor(author.authorImage).url()} className="rounded-full w-32 h-32 lg:w-64 lg:h-64 mr-8" alt={author.name}/>
                     <div className="text-lg flex flex-col justify-center">
-                        <h1 className="mono text-2xl mb-4">Hi there, I'm {" "}
+                        <h1 className="mono text-2xl my-4">Hi there, I'm {" "}
                             <span>{author.name}</span>
                         </h1>
                         <div className="prose lg:prose-xl">
