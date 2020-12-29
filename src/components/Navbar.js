@@ -12,10 +12,10 @@ export default function Navbar() {
                     <NavLink to="/" exact activeClassName="border-b-4 border-pink border-opacity-100 text-pink" className="inline-flex items-center py-3 px-3 mr-6  text-white hover:text-pink border-b-4 border-opacity-0 hover:border-b-4 border-pink  text-base font-bold mono tracking-widest">
                         <FontAwesomeIcon icon={faHome} className="md:mr-4"></FontAwesomeIcon>  <p className="hidden md:block ">Home</p>
                     </NavLink>
-                    <NavLink to="post" activeClassName="border-b-4 border-pink border-opacity-100 text-pink" className="inline-flex items-center py-3 px-3 mr-6 text-white hover:text-pink border-b-4 border-opacity-0 hover:border-b-4 border-pink text-base font-bold mono tracking:widest">
+                    <NavLink to="/post/" activeClassName="border-b-4 border-pink border-opacity-100 text-pink" className="inline-flex items-center py-3 px-3 mr-6 text-white hover:text-pink border-b-4 border-opacity-0 hover:border-b-4 border-pink text-base font-bold mono tracking:widest">
                         <FontAwesomeIcon icon={faQuoteRight} className="md:mr-4"></FontAwesomeIcon> <p className="hidden md:block ">Blog</p>
                     </NavLink>
-                    <NavLink to="project" activeClassName="border-b-4 border-pink border-opacity-100 text-pink" className="inline-flex items-center py-3 px-3 mr-6 text-white hover:text-pink border-b-4 border-opacity-0 hover:border-b-4 border-pink text-base font-bold mono tracking:widest">
+                    <NavLink to="/project" activeClassName="border-b-4 border-pink border-opacity-100 text-pink" className="inline-flex items-center py-3 px-3 mr-6 text-white hover:text-pink border-b-4 border-opacity-0 hover:border-b-4 border-pink text-base font-bold mono tracking:widest">
                         <FontAwesomeIcon icon={faFolder} className="md:mr-4"></FontAwesomeIcon>  <p className="hidden md:block ">Projects</p>
                     </NavLink>
                     <NavLink to="/about" activeClassName="border-b-4 border-pink border-opacity-100 text-pink" className="inline-flex items-center py-3 px-3 mr-6 text-white hover:text-pink border-b-4 border-opacity-0 hover:border-b-4 border-pink text-base font-bold mono tracking:widest">

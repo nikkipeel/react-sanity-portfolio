@@ -41,7 +41,7 @@ export default function SinglePost() {
 
     return (
         <main className="bg-brown min-h-screen p-4 md:p-12">
-            <Link to="/post" exact className="text-white text-base items-center"><FontAwesomeIcon icon={faChevronLeft} className="mr-4"></FontAwesomeIcon> Back to Blog</Link>
+            <Link to="/post/" exact className="text-white text-base items-center"><FontAwesomeIcon icon={faChevronLeft} className="mr-4"></FontAwesomeIcon> Back to Blog</Link>
             <article className="container text-white mx-auto rounded-lg mt-4">
                 <header className="relative">
                     <div className="absolute h-full w-full flex items-center justify-center p-8">
