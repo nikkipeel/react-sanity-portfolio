@@ -4,9 +4,11 @@ import About  from "./components/About";
 import SinglePost from "./components/SinglePost";
 import Post from "./components/Post";
 import Project from "./components/Project";
+import Tools from "./components/Tools";
 import './App.css';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+
 function App() {
   return (
    <BrowserRouter>
@@ -17,6 +19,7 @@ function App() {
       <Route component={Post} path='/post' exact/>
       <Route component={SinglePost} path='/post/:slug' />
       <Route component={Project} path='/project' />
+      <Route component={Tools} path='/tools' />
     </Switch>
     <Footer></Footer>
    </BrowserRouter> 

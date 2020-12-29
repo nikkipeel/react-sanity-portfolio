@@ -5,7 +5,7 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 export default function Footer() {
     return (
          <footer className="bg-brown flex flex-col align-center text-center my-8 mx-auto w-100 h-auto pb-16 text-white">
-             <div id="to-top">
+             <div id="to-top" className="hidden md:block">
                 <a href="#top" className="cursor-pointer hover:underline"><FontAwesomeIcon icon={ faChevronUp  }></FontAwesomeIcon><br/>Back To Top</a>
             </div>
             <div className="mt-16">

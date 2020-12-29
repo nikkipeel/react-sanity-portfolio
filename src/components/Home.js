@@ -28,15 +28,17 @@ export default function Home() {
         }, []);
     return (
         <main className="container flex flex-col bg-brown text-white">
-            <section className="flex flex-col md:flex-row text-center md:text-left justify-center pt-12 lg:pt-36 px-8">
-            <img src="https://i.imgur.com/mz9QfKo.jpg" className="rounded-full mr-auto ml-auto md:mr-8 md:ml-0" alt="portrait"></img>
-                <div className="flex flex-col md:w-1/2">
-                    <h1 className="mt-4 text-xl text-white font-bold mono leading-none lg:leading-snug">Hi there, I'm Nikki!</h1>
-                    <p className="mt-4 text-base text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eos quia nam repudiandae dolore rerum iste labore doloremque exercitationem doloribus dolorum quam inventore nostrum reiciendis voluptas harum, neque, ducimus eaque facilis, corrupti temporibus? Inventore, ipsa.</p>
-                </div>
-            </section>
+        <div className="p-4 md:p-12 md:w-3/4 mx-auto relative">
+                <section className="bg-brown text-white text-center md:text-left rounded-lg lg:flex p-12 md:p-20">
+                    <img src="https://i.imgur.com/mz9QfKo.jpg" className="h-60 w-48 lg:w-64 lg:h-80 mx-auto md:mr-12" alt="portrait" id="home-img"/>
+                    <div className="text-lg flex flex-col justify-center">
+                        <h1 className="mono text-xl my-8">Hi there, I'm Nikki!</h1>
+                        <p className="mt-4 text-base text-white">I'm a Front End Developer working from home in the United States. I love making websites and thought I'd create this blog to share some of my projects and favorite web development tools with you. Feel feel to browse my recent posts and projects or find something new in the resources section 😎</p>
+                    </div>
+                </section>
+            </div>
 
-            <div className="flex flex-col justify-center mx-auto mt-36 mb-24"> 
+            <div className="flex flex-col justify-center mx-auto mt-24 mb-24"> 
                     {postData && postData.map((post, index) => (
                     <article className="m-4">
                         <Link to={"/post/" + post.slug.current} key={post.slug.current}>

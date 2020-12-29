@@ -23,14 +23,14 @@ export default function About() {
     if(!author) return <div>Loading...</div>
     return (
         <main className="relative">   
-            <div className="p-10 lg:pt-48 container mx-auto relative">
-                <section className="bg-brown text-white rounded-lg lg:flex p-12 md:p-20">
-                    <img src={urlFor(author.authorImage).url()} className="rounded-full h-60 w-48 lg:w-64 lg:h-80 mr-0 md:mr-8" alt={author.name}/>
+            <div className="p-4 md:p-12 md:w-3/4 mx-auto relative">
+                <section className="bg-brown text-white text-center md:text-left rounded-lg lg:flex p-12 md:p-20">
+                    <img src={urlFor(author.authorImage).url()} className="h-60 w-48 lg:w-64 lg:h-80 mx-auto md:mr-12" alt={author.name} id="about-img"/>
                     <div className="text-lg flex flex-col justify-center">
-                        <h1 className="mono text-2xl my-4">Hi there, I'm {" "}
+                        <h1 className="mono text-xl my-8">Hi! My name is {" "}
                             <span>{author.name}</span>
                         </h1>
-                        <div className="prose lg:prose-xl">
+                        <div className="prose lg:prose-xl text-base">
                             <BlockContent blocks={author.bio} projectId="0dzyqy4p" dataset="production" />
                         </div>
                     </div>

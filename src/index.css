@@ -46,6 +46,9 @@ code {
 main button {
   margin: auto;
 }
+#home-img, #about-img {
+  border-radius: 50%;
+}
 
 @media screen and (max-width: 768px) {
   nav {
