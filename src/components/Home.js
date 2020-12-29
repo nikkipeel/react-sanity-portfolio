@@ -21,14 +21,15 @@ export default function Home() {
                             },
                             alt
                         }
-                    }`)
+                    }`
+                )
                 .then((data) => setPost(data))
                 .catch(console.error);
         }, []);
     return (
         <main className="container flex flex-col bg-brown text-white">
             <section className="flex flex-col md:flex-row text-center md:text-left justify-center pt-12 lg:pt-36 px-8">
-                <img src="https://i.imgur.com/mz9QfKo.jpg" className="rounded-full md:mr-8 mx-auto md:mx-0" alt="Portrait"/>
+            <img src="https://i.imgur.com/mz9QfKo.jpg" className="rounded-full mx-auto md:mr-8"></img>
                 <div className="flex flex-col md:w-1/2">
                     <h1 className="mt-4 text-xl text-white font-bold mono leading-none lg:leading-snug">Hi there, I'm Nikki!</h1>
                     <p className="mt-4 text-base text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eos quia nam repudiandae dolore rerum iste labore doloremque exercitationem doloribus dolorum quam inventore nostrum reiciendis voluptas harum, neque, ducimus eaque facilis, corrupti temporibus? Inventore, ipsa.</p>
