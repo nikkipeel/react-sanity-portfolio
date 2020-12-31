@@ -15,58 +15,58 @@ export default {
             name: "description",
             type: "text",
         },
-    {
-        name: "link",
-        type: "url",
-    },
-    {
-        name: 'projectImage',
-        title: 'Project image',
-        type: 'image',
-        options: {
-          hotspot: true,
+        {
+            name: "link",
+            type: "url",
         },
-    },
-    {
-        name: "projectTag",
-        title:"Project tag",
-        type: "string",
-        options: {
-            list: [
-            {
-                value: "react", title: "React",
+        {
+            name: 'mainImage',
+            title: 'Project image',
+            type: 'image',
+            options: {
+                hotspot: true,
             },
-            {
-                value: "tailwind", title: "TailwindCSS",
-            },
-            {
-                value: "bootstrap", title: "Bootstrap",
-            },
-            {
-                value: "materialize", title: "Materialize",
-            },
-            {
-                value: "mern", title: "MERN",
-            },
-            {
-                value: "javascript", title: "Javascript",
-            },
-            {
+        },
+        {
+            name: "projectTag",
+            title:"Project tag",
+            type: "string",
+            options: {
+                list: [
+                {
+                    value: "react", title: "React",
+                },
+                {
+                    value: "tailwind", title: "TailwindCSS",
+                },
+                {
+                    value: "bootstrap", title: "Bootstrap",
+                },
+                {
+                    value: "materialize", title: "Materialize",
+                },
+                {
+                    value: "mern", title: "MERN",
+                },
+                {
+                    value: "javascript", title: "Javascript",
+                },
+                {
+                    value: "wordpress", title: "Wordpress",
+                },
+                {
+                    value: "css", title: "CSS",
+                },
+                {
+                    value: "html", title: "HTML",
+                },
+                {
+                    value: "javascript", title: "Javascript",
+                },
+                {
                 value: "wordpress", title: "Wordpress",
-            },
-            {
-            value: "css", title: "CSS",
-            },
-            {
-            value: "html", title: "HTML",
-            },
-            {
-            value: "javascript", title: "Javascript",
-            },
-            {
-            value: "wordpress", title: "Wordpress",
-            },
-        ],
+                },
+            ],
         },
     },
     

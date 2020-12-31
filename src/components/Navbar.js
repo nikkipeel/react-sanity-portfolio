@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faQuoteRight, faUser, faTools, faFolder } from '@fortawesome/free-solid-svg-icons';
 import { faCodepen, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -26,10 +26,11 @@ export default function Navbar() {
                     </NavLink>
                 </nav>
                 <div className="hidden md:inline-flex items-center py-3 px-3">
-                    <FontAwesomeIcon icon={faEnvelope} url="mailto:nikkipeel.dev@gmail.com" className="mr-8 text-2xl text-white hover:text-pink cursor-pointer" target="_blank" />
-                    <FontAwesomeIcon icon={faGithub} url="https://www.codepen.io/nikki-peel" className=" mr-8 text-2xl text-white hover:text-pink cursor-pointer" target="_blank" />
-                    <FontAwesomeIcon icon={faCodepen} url="https://www.github.com/nikkipeel" className="mr-8 text-2xl text-white hover:text-pink cursor-pointer" target="_blank"/>
-                    <FontAwesomeIcon icon={faLinkedin} url="https://www.linkedin.com/in/nikkipeel" className=" mr-8 text-2xl text-white hover:text-pink cursor-pointer" target="_blank" />
+                    <a href="mailto:nikkipeel.dev@gmail.com" className="mr-8 text-2xl text-white hover:text-pink cursor-pointer" target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faEnvelope} /></a>
+                    <a href="https://www.github.com/nikkipeel" className="mr-8 text-2xl text-white hover:text-pink cursor-pointer" target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faGithub} /></a>
+                    <a href="https://www.codepen.io/nikki-peel" className="mr-8 text-2xl text-white hover:text-pink cursor-pointer" target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faCodepen} /></a>
+                    <a href="https://www.linkedin.com/in/nikkipeel" className="mr-8 text-2xl text-white hover:text-pink cursor-pointer" target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faLinkedin} /></a>
+                
                 </div>
             </div>
         </header>

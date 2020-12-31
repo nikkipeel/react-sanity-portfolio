@@ -8,6 +8,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+* {
+  overflow-wrap: break-word;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #341611;
@@ -46,6 +51,7 @@ code {
 main button {
   margin: auto;
 }
+
 #home-img, #about-img {
   border-radius: 50%;
 }

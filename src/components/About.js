@@ -22,7 +22,7 @@ export default function About() {
 
     if(!author) return <div>Loading...</div>
     return (
-        <main className="relative">   
+        <main className="container relative">   
             <div className="p-4 md:p-12 md:w-3/4 mx-auto relative">
                 <section className="bg-brown text-white text-center md:text-left rounded-lg lg:flex p-12 md:p-20">
                     <img src={urlFor(author.authorImage).url()} className="h-60 w-48 lg:w-64 lg:h-80 mx-auto md:mr-12" alt={author.name} id="about-img"/>
