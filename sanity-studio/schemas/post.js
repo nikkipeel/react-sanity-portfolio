@@ -31,11 +31,13 @@ export default {
         hotspot: true,
       },
     },
+    
     {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
+      name: 'categoryTag',
+      title: 'Category Tag',
+      type: 'string',
       of: [{type: 'reference', to: {type: 'category'}}],
+      
     },
     {
       name: 'publishedAt',
@@ -59,7 +61,7 @@ export default {
       title: 'title',
       author: 'author.name',
       media: 'mainImage',
-      description: 'description'
+      description: 'description',
     },
     prepare(selection) {
       const {author} = selection

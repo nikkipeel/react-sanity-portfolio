@@ -21,7 +21,7 @@ export default function Post() {
                         },
                         alt
                     },
-                    category,
+                    categoryTag,
                 }`)
             .then((data) => setPost(data))
             .catch(console.error);
@@ -44,9 +44,8 @@ export default function Post() {
                             </span>
                             <div className="mt-4 mb-4">
                                 <p className="text-base mb-4">{post.description}</p>
-                                {/* These will be made dynamic as categories/topics */ }
-                                <span className="bg-pink text-sm py-2 px-4 mr-2 rounded">css</span>
-                                <span className="bg-yellow text-sm py-2 px-4 mr-2 rounded">html</span>
+                                {/* These will be made dynamic as categories */ }
+                                <span className="bg-pink text-sm py-2 px-4 mr-2 rounded">{post.categoryTag}</span>
                                 {/* This will also be made dynamic some how */}
                                 <small className="text-sm ml-2">&#9749; 4 min read</small>
                             </div>
