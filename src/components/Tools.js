@@ -37,22 +37,22 @@ export default function Tools() {
                     <h2 className="text-3xl mb-4 border-b-2 border-yellow w-64 md:w-80 leading-loose rounded-sm">Learning Platforms</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-start">
                     <li className="flex flex-col pb-2">
-                        <a href="https://scrimba.com/" className="text-lg font-bold hover:text-pink hover:underline cursor-pointer">●  Scrimba</a>
+                        <a href="https://scrimba.com/" className="text-lg font-bold hover:text-pink hover:underline cursor-pointer">  Scrimba</a>
                         <em>*Free courses available</em>
                     </li>
                     <li className="flex flex-col pb-2">
-                        <a href="https://www.freecodecamp.org/learn" className="text-lg font-bold hover:text-pink hover:underline cursor-pointer">●  FreeCodeCamp</a>
+                        <a href="https://www.freecodecamp.org/learn" className="text-lg font-bold hover:text-pink hover:underline cursor-pointer">  FreeCodeCamp</a>
                         <em>*All courses are free</em>
                     </li>
-                    <li><a href="https://www.udemy.com/" className="text-lg font-bold hover:text-pink hover:underline cursor-pointer pb-2">●  Udemy</a></li>
+                    <li><a href="https://www.udemy.com/" className="text-lg font-bold hover:text-pink hover:underline cursor-pointer pb-2">  Udemy</a></li>
                     <li>
-                        <a href="https://www.pluralsight.com/" className="text-lg font-bold hover:text-pink hover:underline cursor-pointer pb-2">●  Pluralsight</a>
+                        <a href="https://www.pluralsight.com/" className="text-lg font-bold hover:text-pink hover:underline cursor-pointer pb-2">  Pluralsight</a>
                     </li>
                     <li className="flex flex-col pb-2">
-                        <a href="https://www.codecademy.com/" className="text-lg font-bold hover:text-pink hover:underline cursor-pointer">●  Codecademy</a>
+                        <a href="https://www.codecademy.com/" className="text-lg font-bold hover:text-pink hover:underline cursor-pointer">  Codecademy</a>
                         <em>*Free courses available</em>
                     </li>
-                    <li><a href="https://frontendmasters.com/" className="text-lg font-bold hover:text-pink hover:underline cursor-pointer pb-2">●  Front End Masters</a></li>
+                    <li><a href="https://frontendmasters.com/" className="text-lg font-bold hover:text-pink hover:underline cursor-pointer pb-2">  Front End Masters</a></li>
                     </div>
                 </ul>
             </section>
