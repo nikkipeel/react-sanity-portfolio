@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  font-size: 18px;
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #341611;
   color: #f8f5f2;
@@ -27,8 +28,13 @@ body {
 .prose img {
   margin: 1rem auto;
   border-radius: 5px;
-  height: 400px;
-  width: auto;
+  height: auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.prose a {
+  color: #EC4899;
 }
 
 section img {
@@ -45,7 +51,34 @@ code {
   color: #f8f5f2;
   padding: 8px;
   border-radius: 3px;
-  line-height: 3;
+  word-wrap: break-word; 
+  line-height: 2.5; 
+} 
+
+pre code{
+  display: block;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  line-height: 1.15;
+  max-width: 70vw;
+  min-width: 100px;
+}
+
+em > p {
+  margin: 2rem 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+ul {
+  list-style: inside;
+  margin: 1rem;
 }
 
 main button {

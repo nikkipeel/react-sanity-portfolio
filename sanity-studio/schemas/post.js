@@ -31,7 +31,6 @@ export default {
         hotspot: true,
       },
     },
-    
     {
       name: 'categoryTag',
       title: 'Category Tag',
@@ -47,13 +46,13 @@ export default {
     {
       name: 'body',
       title: 'Body',
-      type: 'blockContent',
+      type: 'content',
     }, 
     {
       title: 'Description',
       name: 'description',
-      type: 'text'
-    }
+      type: 'text',
+    },
   ],
 
   preview: {

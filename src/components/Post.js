@@ -7,6 +7,7 @@ export default function Post() {
     // fetch sanity data
     const [postData, setPost] = useState(null);
 
+
     useEffect(() => {
         sanityClient
             .fetch(
@@ -20,8 +21,9 @@ export default function Post() {
                             url
                         },
                         alt
-                    },
+                    }, 
                     categoryTag,
+                   
                 }`)
             .then((data) => setPost(data))
             .catch(console.error);
@@ -45,7 +47,7 @@ export default function Post() {
                             <div className="mt-4 mb-4">
                                 <p className="text-base mb-4">{post.description}</p>
                                 {/* These will be made dynamic as categories */ }
-                                <span className="bg-pink text-sm py-2 px-4 mr-2 rounded">{post.categoryTag}</span>
+                                <span className="bg-pink font-semibold text-sm py-2 px-4 mr-2 rounded">{post.categoryTag}</span>
                                 {/* This will also be made dynamic some how */}
                                 <small className="text-sm ml-2">&#9749; 4 min read</small>
                             </div>

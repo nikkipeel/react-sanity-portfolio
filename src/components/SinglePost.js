@@ -16,6 +16,16 @@ export default function SinglePost() {
     const [singlePost, setSinglePost] = useState(null); // initial state is null
     const { slug } = useParams();
 
+    
+    const serializers = {
+        types: {
+          code: props => (
+            <pre data-language={props.node.language}>
+              <code>{props.node.code}</code>
+            </pre>
+          )
+        }
+    }
     useEffect(() => {
         sanityClient.fetch(`
             *[slug.current == "${slug}"]{
@@ -58,7 +68,7 @@ export default function SinglePost() {
                     <img src={singlePost.mainImage.asset.url} alt={singlePost.title} className="w-full object-cover rounded-t" style={{ height: "400px"}}/>
                 </header>
                 <div className="break-words px-4 lg:px-16 py-12 lg:py-20 prose lg:prose-xl max-w-screen leading-normal">
-                    <BlockContent blocks={singlePost.body} projectId="0dzyqy4p" dataset="production"/> 
+                    <BlockContent blocks={singlePost.body} projectId="0dzyqy4p" dataset="production" serializers={serializers}/> 
                     {/*<ReactMarkdown markdown={singlePost.body} projectId="0dzyqy4p" dataset="production"/> */}
                 </div>
             </article>
