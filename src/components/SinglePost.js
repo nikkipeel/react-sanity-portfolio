@@ -56,7 +56,7 @@ export default function SinglePost() {
             <article className="container text-white mx-auto rounded-lg mt-4">
                 <header className="relative">
                     <div className="absolute h-full w-full flex items-center justify-center p-8">
-                        <div className="bg-white text-brown bg-opacity-75 rounded p-12">
+                        <div className="bg-white text-brown bg-opacity-75 rounded p-4 md:p-12">
                             <h1 className="mono text-3xl mb-4">
                                 {singlePost.title}
                             </h1>

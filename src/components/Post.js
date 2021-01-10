@@ -32,7 +32,7 @@ export default function Post() {
         <main className="bg-brown text-white min-h-screen p-12">
             <section className="container mx-auto">
                 <h1 className="text-4xl mono">Blog Posts Page</h1>
-                <h2 className="text-lg md:mb-12">Welcome to my page of blog posts</h2>
+                <h2 className="text-lg mb-12">Welcome to my page of blog posts</h2>
 
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center mx-auto md:gap-8 mb-24"> 
@@ -42,11 +42,11 @@ export default function Post() {
                         <span className="block h-64 relative leading-snug" key={index}>
                             <img src={post.mainImage.asset.url} alt={post.mainImage.alt} className="w-full h-full object-cover absolute" id="main-img"/>
                             <span className="block relative h-full flex justify-start md:justify-end items-end pr-4 md:pb-4">
-                                <h3 className="bg-gray-800 bg-opacity-75 text-white text-xl font-semibold md:px-3 py-4 rounded text-left">{post.title}</h3>
+                                <h3 className="bg-gray-800 bg-opacity-75 text-white text-xl font-semibold px-3 py-4 rounded text-left">{post.title}</h3>
                             </span>
                             <div className="mt-4 mb-4">
                                 <p className="text-base mb-4">{post.description}</p>
-                                <span className="bg-pink font-semibold text-sm py-2 px-4 mr-2 rounded">{post.categoryTag}</span>
+                                <span className="bg-mauve font-semibold text-sm py-2 px-4 mr-2 rounded">{post.categoryTag}</span>
                                 <small className="text-base ml-2">&#128197; {post.publishedAt}</small>
                             </div>
                         </span>

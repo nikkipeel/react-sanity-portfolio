@@ -49,7 +49,7 @@ export default function Home() {
                             <div className="m-4">
                                 <h3 className="text-white text-2xl font-semibold mb-2">{post.title}</h3>
                                 <p className="text-base mb-4">{post.description}</p>
-                                <span className="bg-pink font-semibold text-sm py-2 px-4 mr-2 rounded">{post.categoryTag}</span>
+                                <span className="bg-mauve font-semibold text-sm py-2 px-4 mr-2 rounded">{post.categoryTag}</span>
                                 <small className="text-base ml-2">&#128197; {post.publishedAt}</small>
                             </div>
                         </span>
