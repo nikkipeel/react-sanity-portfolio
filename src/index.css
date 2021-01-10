@@ -38,9 +38,10 @@ body {
 }
 
 section img {
-  width: 150px;
-  height: 180px;
+  width: auto;
+  height: 200px;
 }
+
 
 nav {
   height: 72px;
@@ -66,14 +67,14 @@ pre code{
   min-width: 100px;
 }
 
-em > p {
-  margin: 2rem 0;
+.prose p {
+  margin: 1.5rem auto;
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 2rem 0;
+  margin: 1rem auto; 
 }
 
 ul {
@@ -108,10 +109,6 @@ main button {
   nav a {
     text-align: center;
     margin: auto;
-  }
-
-  #main-img {
-    display: none;
   }
   
 }

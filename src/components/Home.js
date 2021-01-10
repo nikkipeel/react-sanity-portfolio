@@ -22,7 +22,8 @@ export default function Home() {
                             },
                             alt
                         },
-                        categoryTag
+                        categoryTag,
+                        publishedAt,
                     }`
                 )
                 .then((data) => setPost(data))
@@ -46,12 +47,10 @@ export default function Home() {
                         <Link to={"/post/" + post.slug.current} key={post.slug.current}>
                         <span className="flex flex-col leading-snug" key={index}>
                             <div className="m-4">
-                                <h3 className="text-white text-2xl font-semibold">{post.title}</h3>
+                                <h3 className="text-white text-2xl font-semibold mb-2">{post.title}</h3>
                                 <p className="text-base mb-4">{post.description}</p>
-                                {/* These will be made dynamic as categories/topics */ }
                                 <span className="bg-pink font-semibold text-sm py-2 px-4 mr-2 rounded">{post.categoryTag}</span>
-                                {/* This will also be made dynamic some how */}
-                                <small className="text-sm ml-2">&#9749; 4 min read</small>
+                                <small className="text-base ml-2">&#128197; {post.publishedAt}</small>
                             </div>
                         </span>
                         </Link>

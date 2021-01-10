@@ -32,6 +32,7 @@ export default function SinglePost() {
                 title,
                 _id,
                 slug,
+                publishedAt,
                 mainImage{
                     asset->{
                         _id,
@@ -63,6 +64,7 @@ export default function SinglePost() {
                                 <img src={urlFor(singlePost.authorImage).url()} alt={singlePost.name} className="w-10 h-10 rounded-full"/>
                                 <p className="mono flex items-center pl-2 text-xl">{singlePost.name}</p>
                             </div>
+                            <p className="text-base font-semibold mt-4 text-center">Published on <strong>{singlePost.publishedAt}</strong></p>
                         </div>
                     </div>
                     <img src={singlePost.mainImage.asset.url} alt={singlePost.title} className="w-full object-cover rounded-t" style={{ height: "400px"}}/>
